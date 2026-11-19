@@ -1,0 +1,32 @@
+# ===== Keil MDK 编译生成文件 =====
+# 忽略整个编译输出和列表文件夹（这两个文件夹通常很大）
+MDK-ARM/Objects/
+MDK-ARM/Listings/
+
+# 忽略各种编译中间文件
+*.o
+*.d
+*.crf
+*.axf
+*.hex
+*.bin
+*.map
+*.lst
+*.dep
+*.lnp
+*.htm
+*.build_log.htm
+
+# ===== Keil 个人配置文件 =====
+# 忽略窗口布局和个人选项文件（换台电脑就不一样了，传上去容易冲突）
+*.uvguix.*
+*.uvoptx
+
+# ===== VS Code 和系统文件 =====
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ===== 绝对不要忽略（保留） =====
+# .uvprojx (Keil工程文件) 必须上传，千万别加到这里！
+# .c 和 .h (源码) 必须上传！
