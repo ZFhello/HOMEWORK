@@ -238,7 +238,7 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void zhongduan(TIM_HandleTypeDef *hitm)
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *hitm)
 {
 	if(hitm->Instance == TIM2)
 	{
